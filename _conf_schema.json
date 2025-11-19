@@ -1,0 +1,136 @@
+{
+  "91porn_enabled": {
+    "description": "是否启用91porn爬虫功能",
+    "type": "bool",
+    "default": true
+  },
+  "91porn_category": {
+    "description": "默认爬取分类",
+    "type": "string",
+    "default": "rf",
+    "options": ["rf", "mv", "vd", "hot", "top"]
+  },
+  "91porn_max_pages": {
+    "description": "默认爬取页数",
+    "type": "int",
+    "default": 5,
+    "hint": "一次爬取的最大页数"
+  },
+  "91porn_workers": {
+    "description": "并发工作线程数",
+    "type": "int",
+    "default": 3,
+    "hint": "同时爬取的线程数"
+  },
+  "91porn_delay": {
+    "description": "请求延迟(秒)",
+    "type": "float",
+    "default": 1.0,
+    "hint": "每次请求之间的延迟时间"
+  },
+  "91porn_viewtype": {
+    "description": "默认视图类型",
+    "type": "string",
+    "default": "basic",
+    "options": ["basic", "detailed"],
+    "hint": "页面视图类型"
+  },
+  "91porn_start_page": {
+    "description": "起始页码",
+    "type": "int",
+    "default": 1,
+    "hint": "爬取的起始页码"
+  },
+  "91porn_timeout": {
+    "description": "请求超时时间(秒)",
+    "type": "float",
+    "default": 15.0,
+    "hint": "HTTP请求超时时间"
+  },
+  "91porn_user_agent": {
+    "description": "用户代理字符串",
+    "type": "string",
+    "default": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+    "hint": "HTTP请求的User-Agent头"
+  },
+  "91porn_verbose": {
+    "description": "启用详细日志",
+    "type": "bool",
+    "default": false,
+    "hint": "是否启用详细的调试日志"
+  },
+  "91porn_stop_on_empty_pages": {
+    "description": "连续空页停止数",
+    "type": "int",
+    "default": 3,
+    "hint": "连续多少页无数据后停止爬取"
+  },
+  "video_download_enabled": {
+    "description": "是否启用视频下载功能",
+    "type": "bool",
+    "default": true
+  },
+  "video_base_url": {
+    "description": "视频网站基础URL",
+    "type": "string",
+    "default": "https://zvm.xinhua107.com/"
+  },
+  "video_max_duration": {
+    "description": "最大视频时长(分钟)",
+    "type": "int",
+    "default": 20,
+    "hint": "过滤超过此时长的视频"
+  },
+  "video_download_workers": {
+    "description": "视频下载并发数",
+    "type": "int",
+    "default": 4,
+    "hint": "同时下载的视频数量"
+  },
+  "max_concurrent_tasks": {
+    "description": "最大并发任务数",
+    "type": "int",
+    "default": 2,
+    "hint": "同时运行的最大任务数量"
+  },
+  "task_timeout": {
+    "description": "任务超时时间(秒)",
+    "type": "int",
+    "default": 300,
+    "hint": "单个任务的最大执行时间"
+  },
+  "image_censorship_enabled": {
+    "description": "是否启用图片打码功能",
+    "type": "bool",
+    "default": true
+  },
+  "mosaic_level": {
+    "description": "马赛克程度",
+    "type": "float",
+    "default": 0.8,
+    "hint": "马赛克程度，0.1-1.0，值越大马赛克块越大"
+  },
+  "proxy": {
+    "description": "HTTP代理地址",
+    "type": "string",
+    "default": "",
+    "hint": "格式: http://proxy:port 或 https://proxy:port"
+  },
+  "timeout": {
+    "description": "HTTP请求超时时间(秒)",
+    "type": "int",
+    "default": 30,
+    "hint": "网络请求的超时时间"
+  },
+  "return_details": {
+    "description": "是否返回视频详细信息",
+    "type": "bool",
+    "default": true
+  },
+  "max_thumbnails": {
+    "description": "最大获取缩略图数量",
+    "type": "int",
+    "default": 10,
+    "hint": "一次获取视频封面的最大数量"
+  }
+}
